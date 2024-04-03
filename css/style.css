@@ -1,0 +1,47 @@
+.main_logo {
+  display: block; }
+
+.header {
+  height: 95vh;
+  background: radial-gradient(circle, #bb42d9, #6321b6);
+  background-size: cover;
+  background-position: top; }
+  .header__logo-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto; }
+
+#loaderArea {
+  background-color: #6321B6;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100000; }
+
+.loader-white {
+  background-color: #FFF !important;
+  transition: background-color 2s, opacity 1s ease-in, visibility 1s ease-in; }
+
+.hidden {
+  opacity: 0;
+  visibility: none; }
+
+.loader-none {
+  display: none; }
+
+#loader_logo {
+  transition: opacity 1s, visibility 1s; }
+
+.logo-hidden {
+  opacity: 0;
+  visibility: none; }

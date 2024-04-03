@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Anessan</title>
+    
+</head>
+<body>
+    <div id="loaderArea">
+        <canvas id="loader_logo" class="main_logo"></canvas>
+    </div>
+
+    <header class="header">
+        <div class="header__logo-box">
+            <canvas id="canvas3d" class="main_logo"></canvas>
+        </div>
+    </header>
+
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.91/build/runtime.js"
+        }
+    }
+    </script>
+    
+    <script src="js/preloader.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+</body>
+</html>

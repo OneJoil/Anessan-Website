@@ -1,0 +1,17 @@
+{
+  "name": "anessan",
+  "version": "1.0.0",
+  "description": "Anessan Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -warning"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "@splinetool/runtime": "^1.0.90"
+  }
+}
