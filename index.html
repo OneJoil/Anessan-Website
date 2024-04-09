@@ -6,30 +6,43 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
     <title>Anessan</title>
-    
+
 </head>
 <body>
-    <div id="loaderArea">
-        <canvas id="loader_logo" class="main_logo"></canvas>
+    <header class="header">   
+
+    <div class="container">
+        <div class="header__navbar">
+            <a href="#" class="header__navbar--logo">
+                <p class="brand-name">anessan.work</p>
+            </a>
+
+            <div class="header__navbar--button" id="select-btn"></div>
+        </div>
     </div>
 
-    <header class="header">
-        <div class="header__logo-box">
-            <canvas id="canvas3d" class="main_logo"></canvas>
-        </div>
+    <div class="header__logo-box">
+        <canvas id="canvas3d"></canvas>
+    </div>
     </header>
+
+    <section class="info">
+
+    </section>
 
     <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
     <script type="importmap">
-    {
+      {
         "imports": {
-        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.91/build/runtime.js"
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.93/build/runtime.js"
         }
-    }
+      }
     </script>
-    
-    <script src="js/preloader.js"></script>
     <script type="module" src="js/script.js"></script>
 
 </body>

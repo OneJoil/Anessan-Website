@@ -1,47 +1,63 @@
-.main_logo {
-  display: block; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto; }
+
+.brand-name {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #3A3A3A; }
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  cursor: pointer; }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background: radial-gradient(circle, #bb42d9, #6321b6);
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  padding: 3rem 0 0 0; }
   .header__logo-box {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
+    height: 92%; }
+  .header__navbar {
+    padding: 1rem 3rem 1rem 3rem;
+    background-color: #FFF;
+    border-radius: 3rem;
+    box-shadow: -9px 10px 0px -1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -9px 10px 0px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -9px 10px 0px -1px rgba(0, 0, 0, 0.3);
     display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    overflow: auto; }
+    align-items: center; }
+    .header__navbar--button {
+      background: url(../../img/anessan-logo.svg) center center/70% no-repeat;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      border: none;
+      box-shadow: 0 0.4rem 10px -1px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      margin-left: 29rem;
+      transition: all .2s; }
+      .header__navbar--button:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 0.8rem 15px -1px rgba(0, 0, 0, 0.3); }
 
-#loaderArea {
-  background-color: #6321B6;
-  position: fixed;
-  overflow: hidden;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 100000; }
-
-.loader-white {
-  background-color: #FFF !important;
-  transition: background-color 2s, opacity 1s ease-in, visibility 1s ease-in; }
-
-.hidden {
-  opacity: 0;
-  visibility: none; }
-
-.loader-none {
-  display: none; }
-
-#loader_logo {
-  transition: opacity 1s, visibility 1s; }
-
-.logo-hidden {
-  opacity: 0;
-  visibility: none; }
+.info {
+  height: 80rem; }
